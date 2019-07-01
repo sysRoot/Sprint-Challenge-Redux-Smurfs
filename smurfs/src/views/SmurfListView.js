@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import SmurfList from '../components/SmurfList';
-import { getSmurfs } from '../actions';
+import { getSmurfs } from '../actions/index';
 
 class SmurfListView extends React.Component {
   constructor() {
@@ -25,7 +25,7 @@ class SmurfListView extends React.Component {
 const mapStateToProps = state => {
   console.log('this is my' + state);
   return {
-    smurfs: state.smurfs.smurfs
+    smurfs: state.smurfs
   };
 };
 
